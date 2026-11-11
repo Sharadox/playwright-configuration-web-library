@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "rootDir": "source",
+    "outDir": "distribution",
+    "customConditions": []
+  },
+  "include": ["source/**/*.ts", "source/**/*.tsx"],
+  "exclude": ["source/**/*unit-test.ts", "source/**/*unit-test.tsx", "source/**/test-fixture/**"]
+}

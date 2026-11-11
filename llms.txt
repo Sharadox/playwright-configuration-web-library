@@ -1,0 +1,8 @@
+# @sharadox/playwright-configuration-web-library
+
+> Shared Playwright config for Next.js apps.
+
+- `definePlaywrightConfiguration({ port?, testDirectory?, serverCommand?, localStorage?, continuousIntegration? })` from `@sharadox/playwright-configuration-web-library/playwright-configuration`.
+- Defaults: tests `src/**/?(*-)end-to-end-test.ts`; projects desktop (Desktop Chrome 1440x900) and phone (Pixel 7); snapshots `{testDir}/{testFileDir}/snapshot/{projectName}/{arg}{ext}`, animations disabled, maxDiffPixelRatio 0.001; reducedMotion reduce; webServer `pnpm exec next start -p <port>` (port from PORT or 3210); CI → retries 1, forbidOnly, github reporter.
+- localStorage option → storageState with those entries for every test.
+- Licence: Sharadox Open Source Licence 0.1.0
