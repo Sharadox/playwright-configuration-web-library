@@ -36,7 +36,7 @@ export function definePlaywrightConfiguration({
     fullyParallel: true,
     forbidOnly: continuousIntegration,
     retries: continuousIntegration ? 1 : 0,
-    reporter: continuousIntegration ? "github" : "list",
+    reporter: continuousIntegration ? [["github"], ["list"]] : "list",
     expect: { toHaveScreenshot: { animations: "disabled", maxDiffPixelRatio: 0.001 } },
     use: { baseURL, reducedMotion: "reduce", trace: "retain-on-failure", ...(storageState ? { storageState } : {}) },
     projects: [
