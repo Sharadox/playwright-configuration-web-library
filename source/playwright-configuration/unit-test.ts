@@ -38,7 +38,8 @@ describe("definePlaywrightConfiguration", () => {
     expect(configuration).toMatchObject({
       testDir: "source",
       retries: 1,
-      reporter: "github",
+      // GitHub annotations, and every test with its duration in the log, to see which ones cost the time.
+      reporter: [["github"], ["list"]],
       forbidOnly: true,
       use: { baseURL: "http://localhost:5000" },
       webServer: { command: "pnpm start", port: 5000, reuseExistingServer: false },
