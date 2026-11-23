@@ -1,6 +1,6 @@
 {
   "name": "@sharadox/playwright-configuration-web-library",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Shared Playwright configuration for Sharadox Next.js applications: desktop and phone projects, snapshots beside each test, reduced motion and the built app started automatically.",
   "private": false,
   "license": "SEE LICENSE IN LICENCA.md",
